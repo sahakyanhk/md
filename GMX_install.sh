@@ -15,7 +15,6 @@ cmake .. -DGMX_BUILD_OWN_FFTW=ON -DGMX_GPU=on  #-DGMX_SIMD=SSE4.1
 make -j 8
 make install
 
-
 echo source /usr/local/gromacs/bin/GMXRC >> ~/.bashrc
 
 cd 
