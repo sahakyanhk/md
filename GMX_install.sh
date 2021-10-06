@@ -11,7 +11,7 @@ cd gromacs-2020.4
 mkdir build 
 cd build 
 
-#installation, see more at https://manual.gromacs.org/documentation/current/install-guide/index.html
+#installation, https://manual.gromacs.org/documentation/current/install-guide/index.html
 cmake .. -DGMX_BUILD_OWN_FFTW=ON -DGMX_GPU=on  #-DGMX_SIMD=SSE4.1
 make -j 8
 make install
