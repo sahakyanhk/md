@@ -16,4 +16,4 @@ gmx mdrun -v -deffnm equil/$prot_name.npt -gpu_id 0
 echo q | gmx make_ndx -f equil/$prot_name.npt.gro
 gmx grompp -f mdp/md.mdp -c equil/$prot_name.npt.gro  -p topol.top -o md/free.$prot_name.md.tpr -r equil/$prot_name.npt.gro -t equil/$prot_name.npt.cpt -n index.ndx
 
-nohup gmx mdrun -v -deffnm md/free.$prot_name.md  -gpu_id 0 &
+nohup gmx mdrun -v -deffnm md/$prot_name.md  -gpu_id 0 &
