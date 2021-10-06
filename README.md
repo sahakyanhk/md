@@ -1,1 +1,1 @@
-# Some usefull scripts
+# Some usefull scripts for MD simulations and analyses
